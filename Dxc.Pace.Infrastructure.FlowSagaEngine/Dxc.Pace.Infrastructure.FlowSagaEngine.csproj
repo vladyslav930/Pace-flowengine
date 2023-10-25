@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hangfire.Core" Version="1.7.11" />
+    <PackageReference Include="ImpromptuInterface" Version="7.0.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="7.0.1" />
+    <PackageReference Include="MassTransit.Redis" Version="7.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.10.4" />
+    <PackageReference Include="NewId" Version="3.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dxc.Pace.Infrastructure.Core\Dxc.Pace.Infrastructure.Core.csproj" />
+    <ProjectReference Include="..\Dxc.Pace.Infrastructure.Hangfire\Dxc.Pace.Infrastructure.Hangfire.csproj" />
+    <ProjectReference Include="..\Dxc.Pace.Infrastructure.MassTransit\Dxc.Pace.Infrastructure.MassTransit.csproj" />
+  </ItemGroup>
+
+</Project>
